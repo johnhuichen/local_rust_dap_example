@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "test_crate"
+name = "local_rust_dap_example"
 version = "0.1.0"

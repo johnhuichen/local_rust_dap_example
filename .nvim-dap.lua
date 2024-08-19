@@ -18,7 +18,10 @@ dap.configurations.rust = {
         name = "",
         type = "codelldb",
         request = "launch",
-        program = "target/debug/test_crate",
+        program = function()
+            vim.fn.jobstart('cargo build')
+            return "target/debug/local_rust_dap_example"
+        end,
         -- args = {""},
         cwd = "${workspaceFolder}",
         stopOnEntry = false
