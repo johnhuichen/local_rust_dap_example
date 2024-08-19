@@ -15,7 +15,7 @@ dap.adapters.codelldb = {
 }
 dap.configurations.rust = {
     {
-        name = "",
+        name = "target/debug/local_rust_dap_example",
         type = "codelldb",
         request = "launch",
         program = function()
